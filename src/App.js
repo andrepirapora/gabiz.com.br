@@ -106,6 +106,7 @@ import ThankYouPage from 'ThankYouPage.js';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SaaSProductLandingPage from 'demos/SaaSProductLandingPage';
+import DownloadApp from 'components/cta/DownloadApp';
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -123,11 +124,20 @@ export default function App() {
         <Route path="/thank-you">
           <ThankYouPage />
         </Route>
+        <Route path="/login">
+          <LoginPage />
+        </Route>
+        <Route path="/sign-up">
+          <SignupPage />
+        </Route>
         <Route path="/terms">
           <TermsOfServicePage />
         </Route>
         <Route path="/policy">
           <PrivacyPolicyPage />
+        </Route>
+        <Route path="/download">
+          <DownloadApp />
         </Route>
         <Route path="/blog">
           <BlogIndexPage />

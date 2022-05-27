@@ -64,23 +64,23 @@ export default () => {
         features={[
           {
             Icon: MoneyIcon,
-            title: 'Affordable',
+            title: 'Econômico',
             description:
-              'We promise to offer you the best rate we can - at par with the industry standard.',
+              'Escolha o freelancer que cabe no seu orçamento, sem perder a qualidade do serviço.',
             iconContainerCss: tw`bg-green-300 text-green-800`,
           },
           {
             Icon: BriefcaseIcon,
-            title: 'Professionalism',
+            title: 'Profissionalismo',
             description:
-              'We assure you that our templates are designed and created by professional designers.',
+              'Nossos freelancers sempre prestarão o melhor serviço para você, pode confiar!',
             iconContainerCss: tw`bg-red-300 text-red-800`,
           },
         ]}
       />
 
       <Testimonial
-        subheading={<Subheading>Testimonials</Subheading>}
+        subheading={<Subheading>Comentários</Subheading>}
         heading={
           <>
             Nossos clientes <HighlightedText>nos amam.</HighlightedText>
@@ -101,11 +101,11 @@ export default () => {
             stars: 5,
             profileImageSrc:
               'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80',
-            heading: 'Love the Developer Experience and Design Principles !',
+            heading: 'Bom tratamento com os freelancers!',
             quote:
-              'Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-            customerName: 'Adam Cuppy',
-            customerTitle: 'Founder, EventsNYC',
+              'Sou técnico em informática e procurei o Gabiz para melhorar os meus ganhos, me atenderam super bem quando tive problemas, além da facilidade de mexer no aplicativo, eu consigo incrementar minha renda.',
+            customerName: 'Flávio Santos',
+            customerTitle: 'Técnico em informática, São Paulo SP.',
           },
         ]}
       />
@@ -113,7 +113,7 @@ export default () => {
         subheading={<Subheading>FAQS</Subheading>}
         heading={
           <>
-            You have <HighlightedText>Questions ?</HighlightedText>
+            Você tem <HighlightedText>perguntas?</HighlightedText>
           </>
         }
         faqs={[

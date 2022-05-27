@@ -26,7 +26,7 @@ const Divider = tw.div`my-16 border-b-2 border-primary-400 w-full`;
 const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
-const LogoImg = tw.img`w-8`;
+const LogoImg = tw.img`w-24`;
 const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-100`;
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-400`;
@@ -56,67 +56,67 @@ export default () => {
             <ColumnHeading>Main</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">FAQs</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Support</Link>
+                <Link href="/help">Ajuda</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">About Us</Link>
+                <Link href="/about">Sobre nós</Link>
               </LinkListItem>
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Product</ColumnHeading>
+            <ColumnHeading>Nossos serviços</ColumnHeading>
             <LinkList>
               <LinkListItem>
                 <Link href="#">Log In</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Personal</Link>
+                <Link href="#">Freelancers</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Business</Link>
+                <Link href="#">Empreendedores</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Team</Link>
+                <Link href="#">Time</Link>
               </LinkListItem>
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Press</ColumnHeading>
+            <ColumnHeading>Imprensa</ColumnHeading>
             <LinkList>
               <LinkListItem>
                 <Link href="#">Logos</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Events</Link>
+                <Link href="#">Eventos</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Stories</Link>
+                <Link href="#">Histórias</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Office</Link>
+                <Link href="#">Escritório</Link>
               </LinkListItem>
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Team</ColumnHeading>
+            <ColumnHeading>Time</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Career</Link>
+                <Link href="#">Carreira</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Founders</Link>
+                <Link href="#">Nosso fundador</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Culture</Link>
+                <Link href="#">Cultura</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Onboarding</Link>
+                <Link href="#">Trabalhe conosco</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -127,10 +127,10 @@ export default () => {
                 <Link href="#">GDPR</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="/policy">Privacy Policy</Link>
+                <Link href="/policy">Políticas de Privacidade</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="/terms">Terms of Service</Link>
+                <Link href="/terms">Termos de Serviço</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Disclaimer</Link>
@@ -142,7 +142,6 @@ export default () => {
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
           </LogoContainer>
           <CopywrightNotice>&copy; Gabiz LLc</CopywrightNotice>
           <SocialLinksContainer>

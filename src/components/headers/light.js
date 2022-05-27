@@ -37,7 +37,7 @@ export const LogoLink = styled(NavLink)`
   ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
 
   img {
-    ${tw`w-10 mr-3`}
+    ${tw`w-24 mr-3`}
   }
 `;
 
@@ -82,10 +82,13 @@ export default ({
       <NavLink href="/blog">Blog</NavLink>
       <NavLink href="/#">Serviços</NavLink>
       <NavLink href="/contact">Contato</NavLink>
-      <NavLink href="/#" tw="lg:ml-12!">
+      <NavLink href="/login" tw="lg:ml-12!">
         Login
       </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/#">
+      <PrimaryLink
+        css={roundedHeaderButton && tw`rounded-full`}
+        href="/download"
+      >
         DOWNLOAD
       </PrimaryLink>
     </NavLinks>,

@@ -1,16 +1,18 @@
-import React from "react";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import { Container as ContainerBase } from "components/misc/Layouts";
-import tw from "twin.macro";
-import styled from "styled-components";
-import {css} from "styled-components/macro"; //eslint-disable-line
-import illustration from "images/login-illustration.svg";
-import logo from "images/logo.svg";
-import googleIconImageSrc from "images/google-icon.png";
-import twitterIconImageSrc from "images/twitter-icon.png";
-import { ReactComponent as LoginIcon } from "feather-icons/dist/icons/log-in.svg";
+import React from 'react';
+import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
+import { Container as ContainerBase } from 'components/misc/Layouts';
+import tw from 'twin.macro';
+import styled from 'styled-components';
+import { css } from 'styled-components/macro'; //eslint-disable-line
+import illustration from 'images/login-illustration.svg';
+import logo from 'images/logo.svg';
+import googleIconImageSrc from 'images/google-icon.png';
+import twitterIconImageSrc from 'images/twitter-icon.png';
+import { ReactComponent as LoginIcon } from 'feather-icons/dist/icons/log-in.svg';
 
-const Container = tw(ContainerBase)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
+const Container = tw(
+  ContainerBase
+)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
 const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;
 const MainContainer = tw.div`lg:w-1/2 xl:w-5/12 p-6 sm:p-12`;
 const LogoLink = tw.a``;
@@ -49,31 +51,30 @@ const SubmitButton = styled.button`
 `;
 const IllustrationContainer = tw.div`sm:rounded-r-lg flex-1 bg-purple-100 text-center hidden lg:flex justify-center`;
 const IllustrationImage = styled.div`
-  ${props => `background-image: url("${props.imageSrc}");`}
+  ${(props) => `background-image: url("${props.imageSrc}");`}
   ${tw`m-12 xl:m-16 w-full max-w-sm bg-contain bg-center bg-no-repeat`}
 `;
 
 export default ({
-  logoLinkUrl = "#",
+  logoLinkUrl = '/',
   illustrationImageSrc = illustration,
-  headingText = "Sign In To Treact",
+  headingText = 'Entrar no Gabiz',
   socialButtons = [
     {
       iconImageSrc: googleIconImageSrc,
-      text: "Sign In With Google",
-      url: "https://google.com"
+      text: 'Sign In With Google',
+      url: 'https://google.com',
     },
     {
       iconImageSrc: twitterIconImageSrc,
-      text: "Sign In With Twitter",
-      url: "https://twitter.com"
-    }
+      text: 'Sign In With Facebook',
+      url: 'https://facebook.com',
+    },
   ],
-  submitButtonText = "Sign In",
+  submitButtonText = 'Entrar',
   SubmitButtonIcon = LoginIcon,
-  forgotPasswordUrl = "#",
-  signupUrl = "#",
-
+  forgotPasswordUrl = '#',
+  signupUrl = '/sign-up',
 }) => (
   <AnimationRevealPage>
     <Container>
@@ -89,32 +90,39 @@ export default ({
                 {socialButtons.map((socialButton, index) => (
                   <SocialButton key={index} href={socialButton.url}>
                     <span className="iconContainer">
-                      <img src={socialButton.iconImageSrc} className="icon" alt=""/>
+                      <img
+                        src={socialButton.iconImageSrc}
+                        className="icon"
+                        alt=""
+                      />
                     </span>
                     <span className="text">{socialButton.text}</span>
                   </SocialButton>
                 ))}
               </SocialButtonsContainer>
               <DividerTextContainer>
-                <DividerText>Or Sign in with your e-mail</DividerText>
+                <DividerText>Ou entre com o seu e-mail</DividerText>
               </DividerTextContainer>
               <Form>
                 <Input type="email" placeholder="Email" />
-                <Input type="password" placeholder="Password" />
+                <Input type="password" placeholder="Senha" />
                 <SubmitButton type="submit">
                   <SubmitButtonIcon className="icon" />
                   <span className="text">{submitButtonText}</span>
                 </SubmitButton>
               </Form>
               <p tw="mt-6 text-xs text-gray-600 text-center">
-                <a href={forgotPasswordUrl} tw="border-b border-gray-500 border-dotted">
-                  Forgot Password ?
+                <a
+                  href={forgotPasswordUrl}
+                  tw="border-b border-gray-500 border-dotted"
+                >
+                  Esqueceu a senha?
                 </a>
               </p>
               <p tw="mt-8 text-sm text-gray-600 text-center">
-                Dont have an account?{" "}
+                Não tem uma conta?{' '}
                 <a href={signupUrl} tw="border-b border-gray-500 border-dotted">
-                  Sign Up
+                  Cadastre-se
                 </a>
               </p>
             </FormContainer>
