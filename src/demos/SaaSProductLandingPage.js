@@ -40,10 +40,10 @@ export default () => {
         imageDecoratorBlob={true}
       />
       <FeatureWithSteps
-        subheading={<Subheading>STEPS</Subheading>}
+        subheading={<Subheading>PASSOS</Subheading>}
         heading={
           <>
-            Easy to <HighlightedText>Get Started.</HighlightedText>
+            Fácil de <HighlightedText>começar.</HighlightedText>
           </>
         }
         textOnLeft={false}
@@ -52,7 +52,7 @@ export default () => {
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
       />
       <MainFeature2
-        subheading={<Subheading>VALUES</Subheading>}
+        subheading={<Subheading>VALORES</Subheading>}
         heading={
           <>
             Estamos sempre pensando em{' '}

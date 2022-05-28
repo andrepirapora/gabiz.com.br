@@ -64,18 +64,18 @@ export default ({
 
   const defaultSteps = [
     {
-      heading: 'Register',
-      description: 'Create an account with us using Google or Facebook.',
+      heading: 'Cadastre-se',
+      description:
+        'Crie uma conta com o seu email ou usando a sua conta do Google ou Facebook.',
     },
     {
-      heading: 'Download',
-      description:
-        'Browse and Download the template that you like from the marketplace.',
+      heading: 'Busque',
+      description: 'Procure pelo serviço desejado através da nossa lista.',
     },
     {
-      heading: 'Run',
+      heading: 'Envie',
       description:
-        'Follow the instructions to setup and customize the template to your needs.',
+        'Envie uma requisição para o freelancer que você mais gostou.',
     },
   ];
 
