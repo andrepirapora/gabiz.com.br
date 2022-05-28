@@ -37,7 +37,7 @@ const Divider = tw.div`my-16 border-b-2 border-gray-300 w-full`;
 const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
-const LogoImg = tw.img`w-4`;
+const LogoImg = tw.img`w-16`;
 const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-800`;
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
@@ -59,7 +59,7 @@ export default () => {
             <ColumnHeading>Main</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">FAQs</Link>
@@ -68,7 +68,7 @@ export default () => {
                 <Link href="#">Support</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">About Us</Link>
+                <Link href="/about">About Us</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -113,35 +113,21 @@ export default () => {
                 <Link href="#">GDPR</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Privacy Policy</Link>
+                <Link href="/policy">Privacy Policy</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Terms of Service</Link>
+                <Link href="/terms">Terms of Service</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Disclaimer</Link>
               </LinkListItem>
             </LinkList>
           </Column>
-          <SubscribeNewsletterColumn>
-            <SubscribeNewsletterContainer>
-              <ColumnHeading>Subscribe to our Newsletter</ColumnHeading>
-              <SubscribeText>
-                We deliver high quality blog posts written by professionals
-                weekly. And we promise no spam.
-              </SubscribeText>
-              <SubscribeForm method="get" action="#">
-                <Input type="email" placeholder="Your Email Address" />
-                <SubscribeButton type="submit">Subscribe</SubscribeButton>
-              </SubscribeForm>
-            </SubscribeNewsletterContainer>
-          </SubscribeNewsletterColumn>
         </SixColumns>
         <Divider />
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
           </LogoContainer>
           <CopywrightNotice>&copy; Gabiz LLc.</CopywrightNotice>
           <SocialLinksContainer>
