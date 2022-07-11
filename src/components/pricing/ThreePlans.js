@@ -146,7 +146,7 @@ export default ({
       background: rgb(56, 178, 172);
       background-image: linear-gradient(
         115deg,
-        #fe0050,
+        #2c8de8,
         #7431ff,
         #8244ff,
         #8e56ff,
